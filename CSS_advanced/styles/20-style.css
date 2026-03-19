@@ -1,0 +1,13 @@
+/* Task 20: Clear the context of the grid */
+
+/* Import normalize.css */
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+
+/* All previous styles from 19-style.css remain here (copy them over) */
+
+/* Clearfix for rows */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
