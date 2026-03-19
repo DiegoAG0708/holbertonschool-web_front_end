@@ -1,0 +1,25 @@
+/* Task 24: Add background and hover state to services */
+
+/* Import normalize.css */
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+
+/* All previous styles from 23-style.css remain here (copy them over) */
+
+/* Card services title */
+.card-services .card-title {
+  margin: 0;
+}
+
+/* Card services links */
+.card-services a {
+  display: block;
+  padding: 2rem;
+  background-color: var(--color-light-grey);
+}
+
+/* Hover state for card services links */
+.card-services a:hover {
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  text-decoration: none;
+}
