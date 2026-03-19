@@ -1,0 +1,25 @@
+/* Task 26: Add border radius to images */
+
+/* Import normalize.css */
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+
+/* All previous styles from 25-style.css remain here (copy them over) */
+
+/* Card testimonial */
+.card-testimonial {
+  text-align: center;
+}
+
+/* Card avatar inside testimonial */
+.card-testimonial .card-avatar {
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+}
+
+/* Cite inside card-quote inside testimonial */
+.card-testimonial .card-quote cite {
+  display: block;
+  padding-top: 1rem;
+  color: var(--color-primary);
+}
