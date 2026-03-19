@@ -1,5 +1,8 @@
 /* Task 13: Pseudo Classes */
 
+/* Import normalize.css */
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+
 :root {
   --color-primary: #d73953;
   --color-black: #090909;
@@ -31,6 +34,12 @@
   --section-title-color: var(--color-black);
 }
 
+/* Universal box sizing */
+
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -43,26 +52,35 @@ body {
   line-height: var(--line-height-base);
 }
 
-/* Anchor elements with href */
+
+/* ===== Task 13 pseudo classes ===== */
+
+/* anchor with href only */
 a[href] {
   color: var(--text-color);
   text-decoration: none;
 }
 
-/* Visited state */
+/* visited */
+
 a[href]:visited {
   font-style: italic;
 }
 
-/* Hover state */
+/* hover */
+
 a[href]:hover {
   text-decoration: underline;
 }
 
-/* Active state */
+/* active */
+
 a[href]:active {
   background-color: var(--color-light-grey);
 }
+
+
+/* rest of style from task 12 */
 
 .visually-hidden {
   display: none;
@@ -91,7 +109,12 @@ a[href]:active {
   font-weight: var(--font-weight-bold);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-family-title);
   font-weight: var(--font-weight-bold);
 }
