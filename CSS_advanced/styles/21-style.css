@@ -1,0 +1,28 @@
+/* Task 21: Simplify the col- selector */
+
+/* Import normalize.css */
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+
+/* All previous styles from 20-style.css remain here (copy them over) */
+
+/* Simplified col- selector */
+[class^="col-"] {
+  float: left;
+  padding: 0.5rem;
+}
+
+/* Keep individual widths only */
+.col-1-3 {
+  width: 33.33%;
+}
+
+.col-1-2 {
+  width: 50%;
+}
+
+/* Clearfix for rows */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
