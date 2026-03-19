@@ -1,0 +1,28 @@
+/* Task 29: Styling and custom properties for the nav */
+
+/* Import normalize.css */
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+
+/* All previous styles from 28-style.css remain here (copy them over) */
+
+/* Update nav-item-link-hover property */
+:root {
+  --nav-item-link-hover: var(--color-white);
+}
+
+/* Nav link pseudo-element */
+.nav .nav-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-white);
+  width: 0;
+  height: 2rem; /* 20% of root element (10px) = 2rem */
+}
+
+/* Hover state for nav-item affecting nav-link::before */
+.nav .nav-item:hover .nav-link::before {
+  background-color: var(--color-primary);
+  width: 100%;
+}
