@@ -1,0 +1,27 @@
+/* Task 23: Fix issues for dark theme */
+
+/* Import normalize.css */
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+
+/* All previous styles from 22-style.css remain here (copy them over) */
+
+/* Dark theme for sections */
+[data-section-theme="dark"] {
+  --text-color: var(--color-white);
+  --section-title-color: var(--color-white);
+  background-color: var(--color-black);
+}
+
+/* Footer address styling */
+.footer-address {
+  color: var(--text-color);
+}
+
+/* Social link styling */
+.social-link {
+  display: block;
+}
+
+.social-link svg {
+  fill: var(--text-color);
+}
