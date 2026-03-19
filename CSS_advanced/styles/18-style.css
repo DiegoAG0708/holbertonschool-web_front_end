@@ -40,16 +40,19 @@
   --section-footer-align: center;
   --footer-padding: 5rem 0 1rem;
 
+  /* Navbar custom properties */
+
   --nav-item-font-family: var(--font-family-title);
   --nav-item-font-weight: var(--font-weight-bold);
   --nav-item-font-size: var(--font-size-medium);
-  --nav-item-letter-spacing: 0.4rem; /* 4% of root element (10px) = 0.4rem */
+  --nav-item-letter-spacing: 0.04rem;
   --nav-item-display: inline-block;
   --nav-item-margin: 0 0 3rem 0;
   --nav-item-link-hover: var(--color-primary);
 }
 
 /* Universal box-sizing rule */
+
 * {
   box-sizing: border-box;
 }
@@ -130,7 +133,12 @@ a[href]:active {
   margin-right: auto;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-family-title);
   font-weight: var(--font-weight-bold);
 }
@@ -140,18 +148,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Navbar customization */
+
 .navbar-menu {
   float: right;
 }
 
-nav {
+.nav {
   margin: 0;
   padding: 0;
   list-style: none;
   text-align: center;
 }
 
-nav .nav-item {
+.nav .nav-item {
   font-family: var(--nav-item-font-family);
   font-weight: var(--nav-item-font-weight);
   font-size: var(--nav-item-font-size);
@@ -160,11 +169,11 @@ nav .nav-item {
   margin: var(--nav-item-margin);
 }
 
-nav .nav-link {
+.nav .nav-link {
   display: block;
-  padding: 0.5rem 1rem; /* half root (0.5rem) top/bottom, full root (1rem) left/right */
+  padding: 0.5rem 1rem;
 }
 
-nav .nav-link:hover {
+.nav .nav-link:hover {
   color: var(--nav-item-link-hover);
 }
