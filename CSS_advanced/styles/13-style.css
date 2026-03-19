@@ -1,8 +1,4 @@
-/* Task 13: Pseudo Classes */
-
-/* Import normalize.css */
-@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
-
+/* 13. Pseudo Classes */
 :root {
   --color-primary: #d73953;
   --color-black: #090909;
@@ -10,37 +6,26 @@
   --color-light-grey: #f3f3f3;
   --color-dark-grey: #353535;
   --text-color: var(--color-black);
-
   --font-family-base: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-family-title: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
-
   --font-size-small: 1.2rem;
   --font-size-medium: 1.6rem;
   --font-size-large: 1.8rem;
   --font-size-x-large: 2.3rem;
   --font-size-xx-large: 4.8rem;
-
   --font-weight-regular: 400;
   --font-weight-bold: 700;
-
   --line-height-small: 1.2;
   --line-height-base: 1.5;
   --line-height-big: 1.8;
-
   --section-header-align: center;
   --section-tagline-transform: uppercase;
-
   --section-title-margin: 0;
   --section-title-color: var(--color-black);
 }
 
-/* Universal box sizing */
-
-* {
-  box-sizing: border-box;
-}
-
 html {
+  scroll-behavior: smooth;
   font-size: 62.5%;
 }
 
@@ -52,35 +37,22 @@ body {
   line-height: var(--line-height-base);
 }
 
-
-/* ===== Task 13 pseudo classes ===== */
-
-/* anchor with href only */
 a[href] {
   color: var(--text-color);
   text-decoration: none;
 }
 
-/* visited */
-
 a[href]:visited {
   font-style: italic;
 }
-
-/* hover */
 
 a[href]:hover {
   text-decoration: underline;
 }
 
-/* active */
-
 a[href]:active {
   background-color: var(--color-light-grey);
 }
-
-
-/* rest of style from task 12 */
 
 .visually-hidden {
   display: none;
